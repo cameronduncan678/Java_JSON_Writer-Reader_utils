@@ -6,7 +6,7 @@ public class JSONobj
     public static void main(String[]args)throws IOException
     {
         String path = "C:\\Users\\Cameron\\Documents\\Coding and Programming\\Projects\\Java_JSON_Writer-Reader_utils\\TESTING\\testOutputs\\";
-        Person Gussie = new Person();
+        Append Gussie = new Append();
         Gson json = new GsonBuilder().setPrettyPrinting().create();
         Writer file = new FileWriter(path + "testJSON.json");
 
@@ -22,7 +22,7 @@ public class JSONobj
     }
 }
 
-class Person
+class Append
 {
     public String name;
     public void setName(String name)
