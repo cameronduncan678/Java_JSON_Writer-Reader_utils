@@ -50,6 +50,7 @@ class JSONWriter
             System.out.println("An Error has ocurred");
             e.printStackTrace();
         }
+    }
 
 }
 
