@@ -33,7 +33,7 @@ class JSONWriter
         return "\""+OBJname+"\""+":"+"\n"+jsonOBJ;
     } 
 
-    //Method to append objects to periosly built .json file
+    //Method to append json objects to another
     public String AppendToJSON(String json, String ap)
     {
         return json + "," + "\n" + ap;
