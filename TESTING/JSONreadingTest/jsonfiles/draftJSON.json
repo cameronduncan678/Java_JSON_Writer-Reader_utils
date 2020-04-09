@@ -1,0 +1,14 @@
+{
+"Gussie-Kirkwood":
+{
+  "JclassStr": "Gussie",
+  "Jclassint": 25,
+  "JclassBool": true
+},
+"Nathan":
+{
+  "JclassStr": "nathan",
+  "Jclassint": 50,
+  "JclassBool": false
+}
+}
