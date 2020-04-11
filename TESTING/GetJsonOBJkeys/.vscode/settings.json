@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "v:\\Pictures\\Coding_Programming\\Projects\\Java_JSON_Writer-Reader_utils\\Externals\\gson-2.8.6.jar",
+        "v:\\Pictures\\Coding_Programming\\Projects\\Java_JSON_Writer-Reader_utils\\Externals\\json-20190722.jar"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+"testObj":
+{
+  "INT": 3,
+  "AINT": 50,
+  "truth": true,
+  "sentence": "This is a test"
+}
+}
