@@ -73,42 +73,29 @@ class JSONReader
     } 
 
     //Method to return an array of object Key Names for further use
-    //Useful for later parsing
-    public String[] getJSON_ObjKeys(String JsonStr)
+    //Needed for retrieving imbeded keys with getJSON_objKeys() 
+    public String[] getJSON_Keys(String JsonStr)
     {
         JSONObject JSONobj = new JSONObject(JsonStr);
         String[] Key_Names = JSONObject.getNames(JSONobj);
         return Key_Names;
     }
 
+    //Method to get the keys for values witin the json objects 
+    //Use getJSON_Keys() to retrieve the object names 
+    public String[] getJSON_objKeys(String JsonStr, String Objname)
+    {
+        JSONObject mastObj = new JSONObject(JsonStr);
+        JSONObject Obj = mastObj.getJSONObject(Objname);
+        String[] Key_Names = JSONObject.getNames(Obj);
+        return Key_Names;
+    }
+
 } 
 
 
-//This class is used for editing your class that you'll use with the Json classes
-//This class is used for variable setting and getting
-//methods within this class are only for variables to be put into the json file
-class JSONclass
-{
-    //These variables are only a template
-    public String JclassStr = "This string is testing";
-    public int Jclassint = 55;
-    public boolean JclassBool = true;
-
-    //These methods are only a template
-    //All methods should be for setting the varriables in this class
-    public void JsetStr(String set)
-    {
-        this.JclassStr = set;
-    }
-    public void JsetInt(int set)
-    {
-        this.Jclassint = set;
-    }
-    public void JsetBool(boolean set)
-    {
-        this.JclassBool = set;
-    }
-
-}
+//JSONclass is an empty parent class 
+//to use effectively please add extends JSONclass to your class
+class JSONclass{}
 
 

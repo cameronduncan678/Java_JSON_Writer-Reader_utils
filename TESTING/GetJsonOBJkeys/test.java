@@ -24,6 +24,8 @@ public class test
             System.out.println(i);
         }
 
+        System.out.println(keys[0]);
+
     }
 }
 
