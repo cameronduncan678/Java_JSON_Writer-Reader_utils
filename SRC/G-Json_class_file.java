@@ -13,6 +13,7 @@ class JSONWriter
     private String path;
     private String file_name;
     
+    
     //JsonWriter class Methods
 
     //Set path and file name methods
@@ -24,6 +25,7 @@ class JSONWriter
     {
         this.file_name = setfname;
     }
+
 
     //Method to write a single object to a .json string for later serialization 
     public String ObjectToJSON(JSONclass a, String OBJname)
@@ -83,6 +85,7 @@ class JSONReader
 
     //Method to get the keys for values witin the json objects 
     //Use getJSON_Keys() to retrieve the object names 
+    //The json keys are added to array in opposite order
     public String[] getJSON_objKeys(String JsonStr, String Objname)
     {
         JSONObject mastObj = new JSONObject(JsonStr);
@@ -91,7 +94,45 @@ class JSONReader
         return Key_Names;
     }
 
+    //The next 3 methods are specifically for parsing specific values
+    //You can use these to reaply to a class for further editing
+
+    //Get a specific Int value from a json obj
+    public int GetJSON_Int(String JsonString, String JsonObject, String KeyName)
+    {
+        JSONObject mastObj = new JSONObject(JsonString);
+        int parse_value = mastObj.getJSONObject(JsonObject).getInt(KeyName);
+        return parse_value;
+    }
+
+    //Get a specific String value from a json obj
+    public String GetJSON_String(String JsonString, String JsonObject, String KeyName)
+    {
+        JSONObject mastObj = new JSONObject(JsonString);
+        String parse_value = mastObj.getJSONObject(JsonObject).getString(KeyName);
+        return parse_value;
+    }
+
+    //Get a specific boolean value from a json obj
+    public boolean GetJSON_Bool(String JsonString, String JsonObject, String KeyName)
+    {
+        JSONObject mastObj = new JSONObject(JsonString);
+        boolean parse_value = mastObj.getJSONObject(JsonObject).getBoolean(KeyName);
+        return parse_value;
+    }
+
 } 
+
+/*
+class JSONEditor
+{
+    public String[] Open_json(int index, String[]keys)
+    {
+
+    }
+}
+*/
+
 
 
 //JSONclass is an empty parent class 
