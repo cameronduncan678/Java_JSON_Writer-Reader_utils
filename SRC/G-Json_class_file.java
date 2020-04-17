@@ -28,7 +28,7 @@ class JSONWriter
 
 
     //Method to write a single object to a .json string for later serialization 
-    public String ObjectToJSON(JSONclass a, String OBJname)
+    public String ObjectToJSON(JSONClass a, String OBJname)
     {
         Gson objjson = new GsonBuilder().setPrettyPrinting().create();
         String jsonOBJ = objjson.toJson(a);
@@ -173,6 +173,6 @@ class JSONEditor
 
 //JSONclass is an empty parent class 
 //to use effectively please add extends JSONclass to your class
-class JSONclass{}
+class JSONClass{}
 
 
