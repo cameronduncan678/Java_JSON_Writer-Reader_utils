@@ -94,6 +94,8 @@ class JSONReader
         return Key_Names;
     }
 
+
+
     //The next 3 methods are specifically for parsing specific values
     //You can use these to reaply to a class for further editing
 
@@ -123,7 +125,7 @@ class JSONReader
 
 } 
 
-/*
+//Class for editing the json file.  
 class JSONEditor
 {
     public String[] Open_json(int index, String[]keys)
@@ -131,7 +133,7 @@ class JSONEditor
 
     }
 }
-*/
+
 
 
 
