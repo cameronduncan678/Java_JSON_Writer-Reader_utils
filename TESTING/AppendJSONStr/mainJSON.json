@@ -1,0 +1,16 @@
+{
+"Gussie":
+{
+  "name": "Agusta Kirkwood",
+  "id": 144567,
+  "location": "Edinburgh",
+  "in_Office": true
+},
+"Nate":
+{
+  "name": "Nathan Nelson",
+  "id": 556890,
+  "location": "Glasgow",
+  "in_Office": false
+}
+}
