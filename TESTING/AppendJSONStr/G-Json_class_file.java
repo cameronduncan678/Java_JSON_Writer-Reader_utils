@@ -169,6 +169,13 @@ class JSONEditor
         }
         
     }
+
+    //Method to open the previosly built json string. 
+    //Using this with the json build class will allow you to append to the json 
+    public String OPENjson(String jsonStr)
+    {
+        return jsonStr.substring(1, (jsonStr.length()-2));
+    }
 }
 
 //JSONclass is an empty parent class 
